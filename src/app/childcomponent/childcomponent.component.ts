@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from './appservice.service';
+import { AppService } from '../appservice.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-childcomponent',
+  templateUrl: './childcomponent.component.html',
+  styleUrls: ['./childcomponent.component.css']
 })
-export class AppComponent implements OnInit {
+export class ChildcomponentComponent implements OnInit {
+
   count: number;
 
   constructor(private appsevice: AppService) {
@@ -20,4 +21,5 @@ export class AppComponent implements OnInit {
   nextCount() {
    this.appsevice.nextCount();
   }
+
 }
