@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from './appservice.service';
+import { AppService } from '../appservice.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-appchild2',
+  templateUrl: 'appchild2.component.html'
 })
-export class AppComponent implements OnInit {
+export class Appchild2Component implements OnInit {
+
   count: number;
   constructor(private appsevice: AppService) {
   }

@@ -5,9 +5,8 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class AppService {
-
-  count: BehaviorSubject<number>;
   counter = 1;
+  count: BehaviorSubject<number>;
   constructor() {
 
     this.count  = new BehaviorSubject(this.counter);
